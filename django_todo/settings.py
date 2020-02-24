@@ -25,7 +25,8 @@ SECRET_KEY = '@cm4g0qmnaxaoxshg^!+#@ks(bz&zg^64j8f^ie!1q=g3$bf19'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-f8fad474-ee7d-4428-a0d8-1027523a8254.ws-eu01.gitpod.io']
+ALLOWED_HOSTS = ['8000-f8fad474-ee7d-4428-a0d8-1027523a8254.ws-eu01.gitpod.io',
+                 'localhost']
 
 
 # Application definition

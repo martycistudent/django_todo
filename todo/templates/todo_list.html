@@ -8,5 +8,25 @@
 </head>
 <body>
     <h1>Things I need to do...</h1>
+    <table>
+        {% for item in items %}
+        <tr>
+            {% if item.done %}
+            <td><strike>{{ item.name }}</strike></td>
+            {% else %}
+            <td>{{ item.name }}</td>
+            {% endif %}
+            <td>
+                <form action="edit/{{ item.id }}" method="GET">
+                    <input type="Submit" value="Edit">
+                </form>
+            </td>
+        </tr>
+        {% empty %}
+        <p>You have nothing to do.</p>
+        {% endfor %}
+    </table>
+
+    <a href="add">Add item</a>
 </body>
 </html>
