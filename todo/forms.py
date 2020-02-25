@@ -5,6 +5,8 @@ from django import forms
 from .models import Item
 
 # Will inherit from forms.ModelForm
+
+
 class ItemForm(forms.ModelForm):
 
     # Inner class just allows us to provide some additional information to

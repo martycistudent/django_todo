@@ -18,11 +18,17 @@
             {% endif %}
             <td>
                 <form action="toggle/{{ item.id }}" method="GET">
+                <!-- reason we didn't need one of these for the Edit form below is because
+                we're not posting data to that page we're only retrieving data -->
                 {% csrf_token %}
                     <input type="Submit" value="Toggle">
                 </form>
             </td>
             <td>
+            <!-- This will tell us that we want to get something from a URL called edit -->
+            <!-- We want to point to a specific URL to update a specific item, we need to
+            access the unique ID for each of those items in the list which is generated
+            automatically by Django -->
                 <form action="edit/{{ item.id }}" method="GET">
                     <input type="Submit" value="Edit">
                 </form>
