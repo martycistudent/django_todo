@@ -68,3 +68,9 @@ def edit_an_item(request, id):
 
     # Request the item_form.html file and we're going to also render the actual form as well
     return render(request, "item_form.html", {'form': form})
+
+def toggle_item(request, id):
+    item = get_object_or_404(Item, pk=id)
+    item.done = not item.done
+    item.save()
+    return redirect(get_todo_list)
