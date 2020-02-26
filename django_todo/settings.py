@@ -27,7 +27,7 @@ SECRET_KEY = '@cm4g0qmnaxaoxshg^!+#@ks(bz&zg^64j8f^ie!1q=g3$bf19'
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-f8fad474-ee7d-4428-a0d8-1027523a8254.ws-eu01.gitpod.io',
-                 'https://martys-first-django-app.herokuapp.com/'
+                 'martys-first-django-app.herokuapp.com'
                  'localhost']
 
 
